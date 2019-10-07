@@ -25,4 +25,4 @@ def getCppData():
 
 if __name__ == '__main__':
     data = getCppData()
-    print(data[234])
+    print(data[1314])
