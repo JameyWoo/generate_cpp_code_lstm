@@ -15,7 +15,7 @@ def batch_data_onefile(one_text, sequence_length):
     return words_x, words_y
 
 
-def batch_data(int_text, sequence_length, batch_size-128):
+def batch_data(int_text, sequence_length, batch_size=128):
     words_x, words_y = [], []
     for each in int_text:
         wx, wy = batch_data_onefile(each, sequence_length)
@@ -33,7 +33,7 @@ def batch_data(int_text, sequence_length, batch_size-128):
 
 
 def getTrainLoader():
-    char2int, int2char, int_text = splitData()
+    char2int, int2char, int_text, max_int = splitData()
     train_loader = batch_data(int_text, 10, 128)
     return train_loader
 

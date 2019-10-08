@@ -49,21 +49,21 @@ def splitData():
         char2int[item[0]] = count
         int2char[count] = item[0]
         count += 1
-        # if item[1] == 9:
-        #     print(item)
-    # print(cnt)
     # print(len(chars.most_common()))
     # print(char2int)
     int_text = []
+    text_cnt = 0
     for each in cppData:
         text = []
         for any in each:
+            text_cnt = max(text_cnt, char2int[any])
             text.append(char2int[any])
         int_text.append(text)
 
-    return char2int, int2char, int_text
+    return char2int, int2char, int_text, text_cnt
 
 
 if __name__ == '__main__':
-    char2int, int2char, int_text = splitData()
-    print(int_text[0])
+    char2int, int2char, int_text, max_int = splitData()
+    print(max(max(int_text)))
+    print(max_int)
