@@ -10,14 +10,14 @@
  - [x] 定义超参数
  - [x] 训练模型, 调参, 保存模型
  - [x] 运行模型, 得出生成的代码, 自动格式化(如果做得到)
+ - [x] 预测时多输入序列
 
 ## 问题点
- - [x] 绝大多数代码都以`#include<iostream>`开始, 运行时不适合以这段作为开始.
  - [x] 关键字较少, 模式非常类似.
 
 ## 第一版结果
 
-训练的loss值. 其实整个训练的中后期一直是这个值, 所以应该是过拟合了.
+训练的loss值. 其实整个训练的中后期一直是这个值左右.
 ![](./imgs/0.png)
 
 ### include开头
@@ -56,6 +56,41 @@ main() {
             }
             cout < < ans;
         }
+```
+
+### #include<iostream>开头
+```cpp
+#include < iostream >
+#include < vector >
+using namespace std;
+int main() {
+    int a[1001], n, i = 0;
+    for (register int i = 0; i < n; + +i) {
+        cout < < n[i];
+        cout < < endl;
+    }
+    int n, m, m;
+    cin >> n;
+    for (int i = 1; i < = n; + +i) {
+        cin >> a >> b;
+        for (int i = 1; i < = 4; i + +) {
+            if (!vis[v][i] & &s[j + +] = = 0) return false;
+        } if ((i + 1 ) % 2 = 1 ; if (n < = m ) {
+            if (i = = 0) {
+                tmp + = intToStr(f _ m, i, x, y, y);
+            } }
+    }
+    void loop(int x) {
+        for (int i = 1; i < = 10; i + +) {
+            for (int j = 1; j < = n; + +l) {
+                / /
+            }
+            cout < < " No \ n \ n ";
+            / / cout < < " - - - - - - - - - - - - - - - - - - - - - - " < < endl;
+            cout < < endl;
+        }
+    }
+}
 ```
 
 其他可在generate文件夹中查看
