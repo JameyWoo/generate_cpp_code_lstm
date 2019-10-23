@@ -16,7 +16,7 @@ print('hello, world')
 
 ```bash
 ls
-cd
+cd ------------------
 cd /sbc
 ```
 
