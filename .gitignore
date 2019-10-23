@@ -1,4 +1,4 @@
-assets
+cpp_data
 __pycache__
 trained_rnn*.pt
 .ipynb_checkpoints

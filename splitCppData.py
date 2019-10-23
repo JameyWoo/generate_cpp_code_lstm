@@ -32,10 +32,10 @@ def splitData():
     '''
     返回根据频率映射好的char2int, int2char
     '''
-    files = os.listdir('./assets')
+    files = os.listdir('./cpp_data')
     cppData = []
     for each in files:
-        with open('./assets/' + each, 'r', encoding='utf-8') as file:
+        with open('./cpp_data/' + each, 'r', encoding='utf-8') as file:
             cppData.append(file.read().split())
     # print(cppData[0])
     chars = Counter()
